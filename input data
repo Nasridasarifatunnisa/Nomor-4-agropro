@@ -1,0 +1,7 @@
+def input_data_panen():
+    """Meminta input data panen langsung dari pengguna lewat terminal."""
+    nama_petani = input("Nama petani: ")
+    komoditas = input("Komoditas: ")
+    jumlah_kg = float(input("Jumlah (kg): "))
+    harga_per_kg = float(input("Harga per kg: "))
+    return tambah_panen(nama_petani, komoditas, jumlah_kg, harga_per_kg)
