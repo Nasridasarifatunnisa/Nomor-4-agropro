@@ -1,8 +1,13 @@
+def hitung_diskon(total, persen_diskon):
+    """Gabungan hasil merge: membatasi diskon maksimal 50% (A)
+    dan mencetak log setiap perhitungan (B)."""
+    persen_diskon = min(persen_diskon, 50)
+    print(f"Menghitung diskon {persen_diskon}% dari total {total}")
+    nilai_diskon = total * (persen_diskon / 100)
+    ...
+=======
 def laporan_total_panen():
 def hitung_diskon(total, persen_diskon):
-<<<<<<< HEAD
-    # Versi Anggota A: diskon maksimal dibatasi 50%
-    persen_diskon = min(persen_diskon, 50)
     """Menghitung dan menampilkan total pendapatan dari seluruh catatan panen."""
     total_keseluruhan = sum(catatan["total"] for catatan in data_panen)
     print(f"Total pendapatan dari {len(data_panen)} catatan: Rp{total_keseluruhan:,.0f}")
