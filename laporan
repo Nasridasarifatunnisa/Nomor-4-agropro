@@ -1,4 +1,8 @@
-def laporan_total_panen(): rrf
+def laporan_total_panen():
+def hitung_diskon(total, persen_diskon):
+<<<<<<< HEAD
+    # Versi Anggota A: diskon maksimal dibatasi 50%
+    persen_diskon = min(persen_diskon, 50)
     """Menghitung dan menampilkan total pendapatan dari seluruh catatan panen."""
     total_keseluruhan = sum(catatan["total"] for catatan in data_panen)
     print(f"Total pendapatan dari {len(data_panen)} catatan: Rp{total_keseluruhan:,.0f}")
